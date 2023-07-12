@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1Apv | grep -v / | sort -d | tr '\n' ','; ls -1Apv | grep / | sort -d | tr '\n' ','; echo ""
+ls -pamv
