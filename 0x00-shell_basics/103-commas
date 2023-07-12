@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1p --group-directories-first | sort -k1,1 -g | tr '\n' ',' | sed 's/,$/\n/'
+ls -1Apv | grep -v / | sort -d | tr '\n' ','; ls -1Apv | grep / | sort -d | tr '\n' ','; echo ""
